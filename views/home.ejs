@@ -1,0 +1,15 @@
+<%- include("partials/header"); -%>
+<div class="container-fluid blog-body">
+  <% for(let i = 0 ; i < blogPosts.length ; i++){ %>
+  <h1><%=blogPosts[i].title%></h1>
+  <%    if(blogPosts[i].content.length > 100) { %>
+  <% let post = blogPosts[i].content.substring(0,99) + " ... " %>
+  <p><%=post %><a href="/posts/<%=blogPosts[i]._id%>">Read more</a></p>
+  
+  <% } else { %>
+  <p><%=blogPosts[i].content%></p>
+  <% } %>
+  <% } %>
+
+</div>
+<%-include("partials/footer"); -%>

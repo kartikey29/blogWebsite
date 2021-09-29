@@ -1,0 +1,49 @@
+body {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+.container-fluid {
+  width: 80%;
+}
+/* blog page */
+.blog-body {
+  margin-top: 50px;
+  text-align: left;
+}
+
+/* navbar */
+
+.navbar-brand {
+  font-size: 2rem;
+}
+.nav-item {
+  margin: 0 10px;
+  letter-spacing: 0.1rem;
+}
+
+/* footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #ffff;
+  background-color: blueviolet;
+}
+
+/* compose page */
+#title-box {
+  margin: 20px 0;
+  width: 80%;
+}
+
+textarea {
+  width: 80%;
+  resize: none;
+}
+.form-compose {
+  padding-top: 50px;
+  text-align: left;
+}
