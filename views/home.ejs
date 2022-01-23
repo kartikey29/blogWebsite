@@ -1,15 +1,21 @@
 <%- include("partials/header"); -%>
 <div class="container-fluid blog-body">
   <% for(let i = 0 ; i < blogPosts.length ; i++){ %>
-  <h1><%=blogPosts[i].title%></h1>
-  <%    if(blogPosts[i].content.length > 100) { %>
-  <% let post = blogPosts[i].content.substring(0,99) + " ... " %>
+  <a href="/delete/<%=blogPosts[i]._id%>" class="cancel"
+    ><i class="far fa-times-circle"></i
+  ></a>
+  <h1 class="blog-title"><%=blogPosts[i].title%></h1>
+  <% if(blogPosts[i].content.length > 100) { %> <% let post =
+  blogPosts[i].content.substring(0,99) + " ... " %>
   <p><%=post %><a href="/posts/<%=blogPosts[i]._id%>">Read more</a></p>
-  
-  <% } else { %>
-  <p><%=blogPosts[i].content%></p>
-  <% } %>
-  <% } %>
 
+  <% } else { %>
+  <p class="blog-content"><%=blogPosts[i].content%></p>
+  <hr />
+  <% } %> <% } %>
+  <div class="btn-compose">
+    <a href="/compose" class="btn-compose btn btn-dark">Compose</a>
+  </div>
 </div>
+
 <%-include("partials/footer"); -%>

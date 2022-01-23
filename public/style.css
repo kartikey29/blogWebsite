@@ -2,10 +2,18 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 50px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.7)
+    ),
+    url("./SL_042620_30310_10.jpg");
+  background-size: contain;
   text-align: center;
 }
 .container-fluid {
+  word-wrap: break-word;
+  position: relative;
   width: 80%;
 }
 /* blog page */
@@ -13,33 +21,80 @@ body {
   margin-top: 50px;
   text-align: left;
 }
+.cancel {
+  position: absolute;
+  margin-top: 10px;
+  right: 2rem;
+  font-size: 1.2rem;
+  color: red;
+}
+.cancel:hover {
+  color: red;
+}
+.blog-title {
+  color: black;
+}
+.blog {
+  background-color: black;
+}
+.blog button {
+  position: absolute;
+  right: 0;
+}
 
+.btn-compose {
+  text-align: right;
+}
 /* navbar */
-
+.navbar {
+  background-color: white;
+}
 .navbar-brand {
+  font-weight: bold;
   font-size: 2rem;
+}
+.site-name {
+  color: black;
+}
+.navbar-brand:hover {
+  color: black;
 }
 .nav-item {
   margin: 0 10px;
   letter-spacing: 0.1rem;
 }
-
+.nav-link {
+  font-weight: bold;
+  color: black;
+}
+.nav-link:hover {
+  color: black;
+}
+.navbar-toggler {
+  border: 2px black solid;
+}
 /* footer */
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  color: #ffff;
-  background-color: blueviolet;
+  color: black;
+  font-weight: bold;
+  background-color: #555f69;
+}
+.foot-para {
+  margin: 10px;
 }
 
 /* compose page */
 #title-box {
+  color: black;
   margin: 20px 0;
   width: 80%;
 }
 
 textarea {
+  color: black;
   width: 80%;
   resize: none;
 }

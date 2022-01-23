@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-  <title>home</title>
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">My Journal</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#blogsitenavbar" aria-controls="#blogsitenavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="blogsitenavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contacts">Contact</a>
-          </li>
-        </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container-fluid">
+        <a class="navbar-brand site-name" href="/"
+          ><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAAFHElEQVR4nO2bX0xbVRzHPx2jd0BLC6Wl0PIvIwsmPjnJwAeTJT6MxIf5YBzOZBtbZkz2L3vwDz4tGqN7QaOJmZoYs/gwYBtMzJQRTdyyPRhNXOIAyzoYtAxYGfvDv3ZwfYDbQYHS297bewt8k5v0cs/93fP9/M4595xTCotlBD4D/ICYosdVEtCnOjCgxBGzDBHnPqDwo/272Oa2c6q6ijFBwP/KIQBe3/eOnNiK6uGDUdovnQOgsOM7gCX1avrha6l4pK8VtSnivBBgm9sOwJggxFtf2Tpzup4zp+tXPFdLkQDWnTZrXQFJb7/7SdRztbTuW8AGAK0roLU2AGhdAa21AUDrCmitdQ9A8YnQb5cvEhi+p2jMPEcBL1S9rGhMSYq3AKXNA9wfHlQ8piTVpsLSii1RSSs+tbTux4C1CsAENAB9QA/wISu09jUFYH5jxAK0AyeAYmAr8DFzEJYoacvhWPtyImNHKBQE+AWodtosfHGyFm/fIB980wpQB5yKvGfNtIBQKMjVK20A1QAWUwbp4izCpvAWoXG5+5LWApR6KywnyXxgZIjiIjfp6el0e+9w8qtmxqeCUrHG5e7VZEcosjskCmeh+Z9ampidnuC1PfvovTsgFbnBCmPAmugCgZEh3C4XrRcasVuzGH88yszMjHT5BrALeLLcvZq0ACW6gzgxGf4sZd5uzaLH00Vt3TF8/nvwzPyjleKkZAsQJyYJvNcAsCjz3p5u9h48HrN50NGusBwF3v+cYKd3aeYPHMU3OAQxmgcVAag5hw/eur185mWaBxW6QJ6jQOmQ5OUX8PRpKHxeXOSmrbWZ/FwTPZ4u3th/hH7fIJlZZpBhHlRoATtrdisdklAoyO+XW4C5Pt9y/hyOnMWZz8wyU1Zewb///BmzeUiBQVCa5Dx8EMDtcnHpYiNOmxlvTze1dcfCmS8rr6CgqFR2fF0DiJzhtbU247SZ6fF0sefAUfp9cxslZeUVFLpL6GhrAplfj+sWwELzkc3+rUMnGPA/23kqdJdgzbPH9RxdAlgt83cH/JQ6rOHy8ZoHHQKIlvm985kvdVg5XFOpyPN0BWDVPj/gB+BwTSXXd2xX5Jm6ARBL5iVd37Gdv7eVK/JcXQCIJfPzkxwAxcyDDgDEknnpPa+GNAUQaX7RJOfg8XDmy8oryLHFP9JHk2arQTnmC90lGNLSVKmHJi1ArvlE3vOrKekA9GQekgxAb+YhiQD0aB6SBECv5iEJAPRsHlQGoHfzoCKAVDAPKgFIFfOgAoBUMg+rAMgOTssKJooi1zp+JjAyFP7b+eYmbi9a1Zl0Yx5WAVB5byja5SW66/Vwf8F/iQ34fHz7/Vlq647Nr+pMlJU/J9v87OysrHrIUdTFUM2dPgDOxhBIFEU6b/4FgOXIm1SlG/i14UeGRwIACZmfnBiPubxcRQWQJs7yqvdOGMDDB6MrlvUP9PL40RibXfnsfr4ULlwJX5PM59jsGNLSosaJR4nEU2Q5LIoi3v9uAVBgy6a9/ksGRx8DkGUyU7q1AqvNTqbJHC2MJlIEwKCvj4knc4b7b3oAMBoFHE4XOTY7lhybLs2DQgB6PZ3hz4KwBYfThTU3D4PBQLY1V7fmQSEARmELWaKIw+nCZLZgMBgwCgKm7ByMSfztYTxSBMCLL+0kOD3F6MgQ6UYBk9mCkJGhRGjVFTkP8AN09Q/LDhScniLXno/N4UwZ88tp3f14OlLGeQg+HZiI9/hDjuH/AQCIkcBR8VfEAAAAAElFTkSuQmCC"
+          />My Journal</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#blogsitenavbar"
+          aria-controls="#blogsitenavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon">
+            <i class="fas fa-bars" style="color: black; font-size: 28px"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="blogsitenavbar">
+          <ul class="navbar-nav ms-auto nav-btns">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contacts">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </body>
+</html>

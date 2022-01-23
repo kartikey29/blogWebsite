@@ -75,6 +75,15 @@ app.get("/posts/:id", function (req, res) {
   });
 });
 
+app.get("/delete/:id", (req, res) => {
+  const id = req.params.id;
+  Blog.deleteOne({ _id: id }, (err, result) => {
+    if (!err) {
+      res.redirect("/");
+    }
+  });
+});
+
 //all post request
 
 app.post("/compose", (req, res) => {
