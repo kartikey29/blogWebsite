@@ -56,9 +56,6 @@ body {
 .navbar-brand {
   font-weight: bold;
   font-size: 2rem;
-  width: 80%;
-  height: auto;
-  text-align: left;
 }
 .site-name {
   color: black;
@@ -95,9 +92,10 @@ footer {
   width: 100%;
   color: black;
   font-weight: bold;
-  background-color: #555f69;
+  background-color: #1c1f23;
 }
 .foot-para {
+  color: white;
   margin: 10px;
 }
 
@@ -116,4 +114,10 @@ textarea {
 .form-compose {
   padding-top: 50px;
   text-align: left;
+}
+.form-compose h1 {
+  color: black;
+}
+
+@media (max-width: 480px) {
 }

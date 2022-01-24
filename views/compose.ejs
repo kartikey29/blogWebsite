@@ -1,15 +1,26 @@
 <%- include("partials/header"); -%>
 
-<div class=" container-fluid form-compose">
-
+<div class="container-fluid form-compose">
   <h1>Write your blog post</h1>
   <form action="/compose" method="post">
-
-    <input type="text" name="Title" id="title-box" placeholder="Title" autocomplete="off" required>
-    <br>
-    <textarea name="Content" id="text-area" cols="80" rows="10" placeholder="Write Your Content"></textarea>
-    <br>
-    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    <input
+      type="text"
+      name="Title"
+      id="title-box"
+      placeholder="Title"
+      autocomplete="off"
+      required
+    />
+    <br />
+    <textarea
+      name="Content"
+      id="text-area"
+      cols="80"
+      rows="10"
+      placeholder="Write Your Content"
+    ></textarea>
+    <br />
+    <button type="submit" class="btn btn-dark btn-lg">Submit</button>
   </form>
 </div>
 <%- include("partials/footer"); -%>
